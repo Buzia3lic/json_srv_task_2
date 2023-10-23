@@ -1,5 +1,5 @@
 module.exports = () => {
-    const data = { history: [] }
+    const data = { history: []}
     function getRandomInt(min, max) {
         min = Math.ceil(min);
         max = Math.floor(max);
@@ -30,7 +30,7 @@ module.exports = () => {
 
     fs.writeFile('db.json', temp, (err) => {
         if(err) throw err;
-        console.log('Data has been added!');
+        console.log('\nДанные успешно записаны в db.json');
     });
 
     return data
